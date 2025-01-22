@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+.button-primary {
+  border: solid 2px #886176;
+  color: #886176;
+  transition: all 0.3s;
+}
+
+.button-primary:hover {
+  color: #f9f8f4;
+  background-color: #886176;
+  transition: all 0.3s;
+}

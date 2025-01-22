@@ -1,185 +1,187 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Muffins</title>
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="text-center">
-
-  <div class="line-transparent">
-    <div class="line-hard"></div>
-    <div class="line-medium"></div>
-    <div class="line-light"></div>
-  </div>
-
-  <div class="navbar">
-    <img src="images/logo.png" class="logo">
-    <div class="links">
-      <a href="" class="link">Présentation</a>
-      <a href="" class="link">Team</a>
-
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-        Contact
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e994b4e605.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Muffins à la myrtille</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <img
+          src="./images/logo-good-kitchen.png"
+          class="logo"
+          alt="Logo Good kitchen"
+        />
+        <div class="links">
+          <a href="index.html">Accueil</a>
+          <a href="recettes.html">Recettes</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <img
+      id="recipe-image"
+      src="images/blueberry-muffin.jpg"
+      alt="photo de muffins à la myrtilles avec couteau"
+    />
+    <div class="header">
+      <h1>Muffins à la myrtille</h1>
+      <p class="subtitle">Par Ôdélices</p>
+    </div>
+    <div class="container">
+      <ul class="list-inline text-center my-4rem">
+        <li>
+          <span class="badge background-secondary mr-1em"
+            ><i class="fa-solid fa-utensils"></i> Difficulté</span
+          >
+          Très facile
+        </li>
+        <li>
+          <span class="badge background-secondary mr-1em"
+            ><i class="fa-solid fa-clock"></i> Temps de préparation</span
+          >
+          15min
+        </li>
+        <li>
+          <span class="badge background-secondary mr-1em"
+            ><i class="fa-solid fa-temperature-high"></i> Temps de cuisson</span
+          >
+          25min
+        </li>
+      </ul>
+      <div class="card-recipe text-center my-2rem">
+        <h2>Présentation</h2>
+        <p>
+          Des <strong>muffins aux myrtilles</strong> bien moelleux et gourmands,
+          aussi bons qu’au Starbucks ! Ajoutez des pépites de chocolat blanc
+          pour une recette plus gourmande.
+        </p>
+        <a
+          href="https://odelices.ouest-france.fr/recette/muffins-aux-myrtilles-r107/"
+          target="_blank"
+          class="button button-primary my-2rem"
+          >En savoir plus</a
+        >
+      </div>
+      <div class="card-recipe my-2rem">
+        <h2 class="text-center">Préparation</h2>
+        <div class="cards-preparation">
+          <div class="card-preparation">
+            <h3>Ingrédients</h3>
+            <ul>
+              <li>260 g de farine</li>
+              <li>160 g de sucre</li>
+              <li>1/2 sachet de levure chimique</li>
+              <li>1 pincée de sel</li>
+              <li>2 oeufs</li>
+              <li>6 cl d'huile'</li>
+              <li>14 cl de lait</li>
+              <li>200 g de myrtilles</li>
+            </ul>
+          </div>
+          <div class="card-preparation">
+            <h3>Étapes</h3>
+            <ol>
+              <li>Préchauffez le four à 180°C (thermostat 6).</li>
+              <li>
+                Dans un saladier, tamisez ensemble la farine, le sucre, la
+                levure et le sel.
+              </li>
+              <li>
+                Dans un autre récipient, battez les oeufs avec un fouet. Ajoutez
+                l’huile et le lait.
+              </li>
+              <li>
+                Mélangez les deux préparations, juste pour qu’elles soient
+                homogènes. Ajoutez les myrtilles et mélangez de nouveau mais ne
+                travaillez pas trop la pâte.
+              </li>
+              <li>
+                Répartissez la préparation dans 12 moules à muffins beurrés ou
+                huilés.
+              </li>
+              <li>Enfournez 20 à 25 min.</li>
+              <li>Laissez-les refroidir sur une grille.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="card-recipe text-center my-2rem">
+        <h2>Autres recettes</h2>
+        <div class="cards-grid my-2rem">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Muffins aux Myrtilles</h3>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Recette classique
+              </h6>
+              <p class="card-text">
+                Ingrédients : 200 g de farine, 100 g de sucre, 1 œuf, 100 ml de
+                lait, 100 g de myrtilles. Mélangez les ingrédients, versez dans
+                des moules, puis enfournez à 180°C pendant 25 minutes.
+              </p>
+              <a href="#" class="button button-primary"
+                >Voir la recette complète</a
+              >
             </div>
-            <div class="modal-body">
-              <h3 class="color-green">MihiVai</h3>
-              <p>contact@mihivai.com</p>
-              <div>
-                <a class="socials" href="">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-                <a class="socials" href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a class="socials" href="">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Muffins au Chocolat</h3>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Gourmandise garantie
+              </h6>
+              <p class="card-text">
+                Ingrédients : 150 g de farine, 50 g de cacao, 100 g de sucre, 2
+                œufs, 120 ml de lait, pépites de chocolat. Mélangez et cuisez à
+                180°C pendant 20-25 minutes.
+              </p>
+              <a href="#" class="button button-primary"
+                >Voir la recette complète</a
+              >
             </div>
-            <div class="modal-footer">
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Muffins à la Banane</h3>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Parfait pour le petit-déjeuner
+              </h6>
+              <p class="card-text">
+                Ingrédients : 2 bananes mûres, 150 g de farine, 50 g de sucre, 1
+                œuf, 100 ml de lait. Écrasez les bananes, mélangez avec les
+                autres ingrédients, cuisez à 180°C pendant 20 minutes.
+              </p>
+              <a href="#" class="button button-primary"
+                >Voir la recette complète</a
+              >
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
-  </div>
-
-  <div class="cadre">
-    <h1 class="color-green">Les Muffins de Grand Mère</h1>
-    <h2 class="color-green">Fondants et croustillants</h2>
-    <img src="images/muffin.jpg" alt="muffin" class="avatar">
-    <br>
-    <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blanck" class="btn-pink">En savoir plus</a>
-  </div>
-
-  <div class="cadre">
-    <h3 class="color-green">Présentation</h3>
-    <p><b>Les muffins</b> sont de petits gâteaux individuels s'apparentant aux madeleines. Apparus au pays de Galles aux alentours du XIe siècle, ils sont très répandus dans les pays anglo-saxons, principalement aux États-Unis. Le principe caractéristique de fabrication des muffins consiste à préparer le mélange des ingrédients liquides et celui des ingrédients secs séparément, puis à mélanger rapidement et <i>grossièrement</i> les deux préparations. Contrairement aux cupcakes, les muffins n’ont jamais de glaçage.
-    <br>
-    Les muffins sont traditionnellement sucrés. On peut les retrouver au chocolat (avec des pépites de chocolat) ou nature, mais il existe de nombreuses autres variétés : fraise, banane, framboise, orange, vanille, myrtille ou bleuets, etc.
-    <br>
-    Il existe également des muffins salés, les English muffins ou muffins anglais, ressemblant à des sortes de petites crêpes très épaisses, faits à partir de pâte levée. Ces muffins salés sont quelquefois faits avec de la farine complète. Ils sont notamment employés comme base de la préparation des "œufs Bénédicte".</p>
-  </div>
-
-  <div class="cadre">
-    <h3 class="color-green">La recette en vidéo</h3>
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/fBuSNu2m3XA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="horizontal-position">
-
-    <div class="cadre-ingredients text-left">
-    <h4  class="color-green">Ingredients</h4>
-      <ul>
-        <li> 280 g de farine</li>
-        <li> 2 oeufs</li>
-        <li> 100 g de sucre</li>
-        <li> 150 ml de lait</li>
-        <li> 80 g de beurre (ou 8 cuillères à soupe d'huile)</li>
-        <li> 1 sachet de levure chimique</li>
-        <li> 1 sachet de sucre vanillé</li>
-        <li> 1 pincée de sel</li>
-        <li> Cannelle</li>
-        <li> Extrait de vanille</li>
-      </ul>
-    </div>
-
-    <div class="cadre-preparartion text-left">
-      <h4 class="color-green">Préparation</h4>
-      <ol>
-        <li>
-          <p><b>Etape 1</b> :
-            Dans un premier saladier : mélanger la farine, le sucre, le sel, le sucre vanillé et la levure.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 2</b> :
-            Dans un deuxième saladier : mélanger le lait, l'huile(ou beurre fondu) et les oeufs.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 3</b> :
-            Verser le contenu du second saladier dans le premier et remuer jusqu'à obtenir une pâte plutôt lisse. Laissez tout de même quelques petits grumeaux.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 4</b> :
-            Mettre au four 15 min à 180°C (thermostat 6)
-          </p>
-        </li>
-      </ol>
-    </div>
-  </div>
-
-  <div class="cadre">
-    <h3 class="color-green">Où trouver des muffins sur Bordeaux?</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45250.95061196091!2d-0.608091850603113!3d44.85854041698775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smuffins!5e0!3m2!1sfr!2sfr!4v1560421401402!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-
-
-
-
-  <div class="cadre">
-
-    <h3 class="color-green m-4">La boutique</h3>
-    <div class="d-flex justify-content-between">
-      <div class="card" style="width: 18rem;">
-        <img src="images/muffin1.jpg" class="card-img-top" alt="images/muffin1.jpg">
-        <div class="card-body">
-          <h5 class="card-title">Muffin chocolat</h5>
-          <p class="card-text">Les muffins au chocolat sont super bons.<br>Essayez les!</p>
-          <a href="#" class="btn btn-success">Plus d'infos ici</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="images/muffin2.jpg" class="card-img-top" alt="images/muffin2.jpg">
-        <div class="card-body">
-          <h5 class="card-title">Muffin vanille</h5>
-          <p class="card-text">Les muffins à la vanille sont super bons.<br>Essayez les!</p>
-          <a href="#" class="btn btn-success">Plus d'infos ici</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="images/muffin3.jpg" class="card-img-top" alt="images/muffin3.jpg">
-        <div class="card-body">
-          <h5 class="card-title">Muffin fraise</h5>
-          <p class="card-text">Les muffins à la fraise sont super bons.<br>Essayez les!</p>
-          <a href="#" class="btn btn-success">Plus d'infos ici</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="line-transparent">
-    <div class="line-hard"></div>
-    <div class="line-medium"></div>
-    <div class="line-light"></div>
-  </div>
-
-  <script src="https://kit.fontawesome.com/18ee24e4d3.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
