@@ -1,6 +1,6 @@
 # Jour 4
 
-## Lien vers la <a href="https://github.com/annecemech/html-css-part-4" target="_blank">démo</a>
+## Lien vers la <a href="https://annecemech.github.io/html-css-part-4/" target="_blank">démo</a>
 
 ## Lien vers le <a href="https://docs.google.com/presentation/d/e/2PACX-1vRPnC4IrNFnMUKN3GfLkolHloYTLVKHLnJQ4-D2FhVyndyBP8nlTTv-hRLqiOOH_RESiKNtexV9roKi/pub?start=false&loop=false&delayms=3000" target="_blank">cours</a>
 
